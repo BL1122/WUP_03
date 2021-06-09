@@ -27,7 +27,12 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+ 
+ 
+ 
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
   
 ### get fancy  
 

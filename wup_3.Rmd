@@ -55,7 +55,25 @@ Red dots appear to be outliers.
     
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+In the back row they drink the most with 9.6 while is the middle row they drink 3.28 and the front row drinks the least with 1.8. 
+
 ## Inferential Tests
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+I am going to reject the null hypothesis and will need clarity on which rows were different from each other. 
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+Using the TukeyHSD plotbox we can determine that the front and middle is different from the back. There is no difference between the front and the middle.
 
 ## Conclusions
 

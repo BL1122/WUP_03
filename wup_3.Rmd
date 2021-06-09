@@ -33,6 +33,8 @@ basicCN + geom_boxplot()
 boxplot(alcohol~Seat,data=davisdata)
 ```
   
+It appears that the people sitting in the back of the class drink more than those who sit in the middle and front of the class. It also appears that those who sit in the middle of the class slightly drink more than those who sit in the front of the class. 
+  
 ### get fancy  
 
 
@@ -41,11 +43,16 @@ basicCN <- ggplot(davisdata,aes(x=Seat,y=alcohol))
 
 basicCN + geom_boxplot()
 ```
-
+  
+It appears that more than 75% of the students who sit in the back of the class drink more than those who sit in the middle and front of the class.
+  
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
-
+  
+It appears that using this data we may reject the null hypothesis. The data on the boxplots shows there's a clear difference in what row the students sit based on how much alcohol they drink.
+Red dots appear to be outliers. 
+    
 ## Numerical Summarys 
 
 ## Inferential Tests

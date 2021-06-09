@@ -77,4 +77,4 @@ Using the TukeyHSD plotbox we can determine that the front and middle is differe
 
 ## Conclusions
 
-
+There is a difference between those who sit in the front row and those who sit in the back and how much alcohol they consume. When we look at the TukeyHSD we can see that there isn't a big difference from the front row and the middle row. We look at the anova chart since the categorical variable has more then 2 levels and we can see that there is a difference in what row students sit and how much alcohol they consume. 
